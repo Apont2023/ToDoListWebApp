@@ -1,4 +1,5 @@
-﻿@{
+﻿<!--
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -6,3 +7,12 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+-->
+@model IEnumerable<ToDoListWebApp.Models.Person>
+
+<h1>Welcome to ToDo List App</h1>
+
+<p>This is the home page of your ToDo List application.</p>
+
+@* Lägg till en länk till din Person- eller Todo-controller om du har dem *@
+<a asp-controller="Person" asp-action="Index">View Persons</a>
